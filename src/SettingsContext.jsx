@@ -72,8 +72,8 @@ export const SettingsProvider = ({ children }) => {
 		const loadedSettings = {
 			scale: parseInt(localStorage.getItem("scale")) || 10,
 			smoothing: localStorage.getItem("smoothing") === "true",
-			enable_upscale: localStorage.getItem("enable_upscale") === "true",
-			enable_scale_to_original: localStorage.getItem("enable_scale_to_original") === "true",
+			enable_upscale: localStorage.getItem("enable_upscale") !== "false",
+			enable_scale_to_original: localStorage.getItem("enable_scale_to_original") !== "false",
 		};
 		setSettingsDict(loadedSettings);
 		setTempSettingsDict(loadedSettings);
