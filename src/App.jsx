@@ -1,8 +1,5 @@
-import { useState, useEffect } from "react";
 import { SettingsProvider, SettingsDialogOpener } from "./SettingsContext";
 import Resizer from "./ResizerContext";
-
-import ThemeSwitchButton from "./components/ThemeSwitchButton";
 
 function SymbolButton(props) {
 	return (
@@ -18,7 +15,7 @@ function App() {
 			<SettingsProvider>
 				<header className='container-fluid'>
 					<div className='title'>
-						<img src='icon.svg' />
+						<img src='media/icons/icon.svg'/>
 						<hgroup>
 							<p>BVUNO'S</p>
 							<h2>imgResizer</h2>
@@ -29,7 +26,7 @@ function App() {
 						<SettingsDialogOpener>
 							<SymbolButton>settings</SymbolButton>
 						</SettingsDialogOpener>
-						<ThemeSwitchButton />
+						<a href="https://github.com/xbvuno/imgResizer"><SymbolButton ><img src="media/github.svg"/></SymbolButton></a>
 					</div>
 				</header>
 
