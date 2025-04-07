@@ -1,7 +1,12 @@
+[data-tooltip] {
+  --bv-tooltip-background-color: rgb(20, 22.5, 26);
+  --bv-tooltip-color: #FFF;
+}
 
 html {
   font-family: "Roboto Mono", monospace;
   font-size: 1rem;
+
 }
 
 .symbol {
@@ -140,4 +145,20 @@ a:hover {
       padding-right: 1rem;
       padding-left: 1rem;
   }
+}
+
+.symbol[data-tooltip]::before {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 0.8rem;
+  line-height: 0.9rem;
+  padding: 0.6rem;
+  white-space: pre;
+}
+
+.symbol[data-tooltip][data-placement=topleft]::before {
+  translate: -40%;
+}
+
+.symbol[data-tooltip][data-placement=bottomleft]::before {
+  translate: -40% 250%;
 }

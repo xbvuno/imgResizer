@@ -20,20 +20,20 @@ function App() {
 							target='_blank'
 							href='https://github.com/xbvuno/imgResizer'
 						>
-							<SymbolButton>
+							<SymbolButton data-tooltip="Open on Github" data-placement="bottomleft">
 								<img src='media/github.svg' />
 							</SymbolButton>
 						</a>
 						<DialogProvider>
 							<InfoDialog />
 							<DialogOpener>
-								<SymbolButton>info</SymbolButton>
+								<SymbolButton data-tooltip="More info" data-placement="bottomleft">info</SymbolButton>
 							</DialogOpener>
 						</DialogProvider>
 						<DialogProvider>
 							<SettingsDialog />
 							<DialogOpener>
-								<SymbolButton>settings</SymbolButton>
+								<SymbolButton data-tooltip="Settings" data-placement="bottomleft">settings</SymbolButton>
 							</DialogOpener>
 						</DialogProvider>
 					</div>

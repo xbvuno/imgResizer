@@ -65,6 +65,7 @@
   .card-container .img-holder img {
     border-radius: 0.5rem;
     height: 16rem;
+    width: 100%;
     object-fit: cover;
     object-position: 50% 50%;
     image-rendering: pixelated;

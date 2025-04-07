@@ -15,7 +15,7 @@ export default function InfoDialog() {
 						rel='prev'
 						onClick={closeDialog}
 					></button>
-					<h4>ℹ️ Infos</h4>
+					<h4>ℹ️ More info</h4>
 				</header><p className="highlight">
 					all the images provided are not stored anywhere but your
 					browser

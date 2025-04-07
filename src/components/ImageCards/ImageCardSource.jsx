@@ -50,13 +50,13 @@ export default function ImageCardSource() {
 	return (
 		<article id='img-source'>
 			<header>
-				<button
+				<button data-tooltip="Paste from clipboard" data-placement="bottom"
 					onClick={pasteFromClick(setSourceBlob, popupAlert)}
 					className='symbol'
 				>
 					content_paste
 				</button>
-				<button onClick={HandleOpenFile} className='symbol'>
+				<button onClick={HandleOpenFile} className='symbol' data-tooltip="Open..." data-placement="bottomleft">
 					folder_open
 				</button>
 				<input

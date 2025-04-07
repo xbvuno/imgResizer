@@ -95,10 +95,10 @@ export default function ImageCardOriginal() {
 			}
 		>
 			<header>
-				<button disabled={isDisabled} onClick={copy} className='symbol'>
+				<button disabled={isDisabled} onClick={copy} className='symbol' data-tooltip="Copy to clipboard" data-placement="bottom">
 					content_copy
 				</button>
-				<button disabled={isDisabled} onClick={save} className='symbol'>
+				<button disabled={isDisabled} onClick={save} className='symbol' data-tooltip="Save..." data-placement="bottomleft">
 					save
 				</button>
 			</header>
@@ -112,6 +112,7 @@ export default function ImageCardOriginal() {
 					disabled={isDisabled}
 					onClick={tryToRemoveCG}
 					className='symbol'
+					data-tooltip="Try to remove Asesprite checkergrid" data-placement="topleft"
 				>
 					bid_landscape_disabled
 				</button>
