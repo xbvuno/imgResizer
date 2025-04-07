@@ -1,0 +1,125 @@
+.card-container {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-grow: 1;
+  }
+  
+  .card-container article {
+    --pico-color: rgba(128, 128, 128, 0.5);
+    width: 100%;
+    min-width: min-content;
+    overflow: hidden;
+    transition: 0.2s;
+    padding: 0.5rem;
+    margin-bottom: 0;
+  }
+  
+  .card-container article.from {
+    --pico-color: white !important;
+  }
+  
+  .card-container article header {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 1rem;
+    width: calc(100% + 1rem);
+    margin: -0.5rem;
+    padding: 0.6rem;
+    margin-bottom:0.5rem;
+  }
+  
+  .card-container article header button {
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    width: 20%;
+    min-width: 4rem;
+  }
+  
+  .card-container article header button:first-of-type {
+    width: 100%;
+  }
+  
+  .card-container .img-holder {
+    position: relative;
+    width: 100%;
+    min-height: 16rem;
+    max-height: 16rem;
+    border: 2px dashed var(--pico-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 1rem;
+  }
+  
+  .card-container .img-holder:has(img) {
+    border: none !important;
+    padding: 0;
+    border-radius: 1rem;
+  }
+  
+  .card-container .img-holder img {
+    border-radius: 0.5rem;
+    height: 16rem;
+    object-fit: cover;
+    object-position: 50% 50%;
+    image-rendering: pixelated;
+  }
+  
+  .card-container .img-holder p {
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 0.8rem;
+  }
+  
+  .card-container .img-holder span {
+    color: var(--pico-color);
+  }
+  
+  .card-container .img-holder:has(img) p {
+    position: absolute;
+    z-index: 10;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.555);
+    color: white;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.5rem;
+    font-size: 0.7rem;
+  }
+  
+  .card-container .img-holder:has(img) p:empty {
+    display: none;
+  }
+  
+  .card-container article footer {
+    --pico-color: var(--pico-contrast);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: -0.5rem;
+    margin-top: 0.5rem;
+    height: 3rem;
+  }
+  
+  .card-container article footer p {
+    margin-bottom: 0;
+    font-size: 0.8rem;
+  }
+  
+  .card-container article footer button {
+    font-size: 1rem;
+    padding: 0 0.2rem;
+  }
+  
+  .card-container article.disabled {
+    scale: 0 1;
+    opacity: 0;
+    width: 0;
+    display: none;
+  }

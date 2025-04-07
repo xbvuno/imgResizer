@@ -8,13 +8,15 @@ export default defineConfig({
     VitePWA({
       registerType: 'autoUpdate',
       manifest: {
-        "name": "bvuno's imgResizer",
-        "short_name": "imgResizer",
-        "start_url": "/imgResizer/",
-        "display": "standalone",
-        "background_color": "#14161a",
-        "theme_color": "#14161a",
-        "icons": [
+        name: "bvuno's imgResizer",
+        short_name: "imgResizer",
+        start_url: "/imgResizer/",
+        display: "standalone",
+        background_color: "#14161a",
+        theme_color: "#14161a",
+        description: 'resize images directly in your browser',
+        lang: 'en-US',
+        icons: [
           {
             "src": "media/icons/48x48.png",
             "sizes": "48x48",
